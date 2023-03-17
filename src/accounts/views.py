@@ -11,8 +11,8 @@ from django.views.generic import CreateView
 from django.views.generic import UpdateView
 
 
-from .forms import UserRegisterForm, UserUpdateForm, UserReactivateForm
-from .utils import signer, send_activation_notification
+from .forms import UserReactivateForm, UserRegisterForm, UserUpdateForm
+from .utils import send_activation_notification, signer
 
 
 class UserRegisterView(CreateView):
@@ -46,8 +46,8 @@ def user_reactivate(request):
 
         if form.is_valid():
             email = form.cleaned_data['email']
-            User = get_user_model()
-            user = User.objects.filter(email=email).first()
+            user = get_user_model()
+            user = user.objects.filter(email=email).first()
 
             match user:
                 case None:

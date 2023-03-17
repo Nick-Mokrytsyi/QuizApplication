@@ -97,5 +97,3 @@ class Result(BaseModel):
             self.state = self.STATE.FINISHED
 
         self.save()
-
-
