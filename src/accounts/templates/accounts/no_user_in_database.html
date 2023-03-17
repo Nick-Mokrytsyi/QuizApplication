@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   ERROR
+{% endblock %}
+
+{% block header %}
+    ERROR
+{% endblock %}
+
+{% block content %}
+    <p>Unfortunately, we didn't find your email in our system.</p>
+    <p>We strongly recommend you <a href="{% url 'accounts:update_activation' %}">recheck</a> your email or
+        <a href="{% url 'accounts:register' %}">register</a> as a new user.</p>
+{% endblock %}
