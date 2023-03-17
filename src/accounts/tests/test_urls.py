@@ -2,7 +2,7 @@ from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from django.views.generic import TemplateView
 
-from src.accounts.views import (
+from ..views import (
     UserRegisterView, UserLoginView, UserLogoutView, user_profile_view,
     UserProfileUpdateView, user_activate, user_reactivate
 )
