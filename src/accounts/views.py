@@ -46,8 +46,8 @@ def user_reactivate(request):
 
         if form.is_valid():
             email = form.cleaned_data['email']
-            user = get_user_model()
-            user = user.objects.filter(email=email).first()
+            user_get = get_user_model()
+            user = user_get.objects.filter(email=email).first()
 
             match user:
                 case None:
