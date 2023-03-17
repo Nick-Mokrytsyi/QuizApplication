@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_nose',
 
     'crispy_forms',
     'crispy_bootstrap5',
@@ -148,3 +149,9 @@ EMAIL_PORT = 1025
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=foo,bar',
+]
