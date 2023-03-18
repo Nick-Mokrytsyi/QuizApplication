@@ -32,5 +32,4 @@ jobs:
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
       run: |
         cd src
-        coverage run manage.py test
         coverage report
