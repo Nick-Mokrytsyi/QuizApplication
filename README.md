@@ -1,6 +1,6 @@
 # Django QUIZ
 
-[![Testing](https://github.com/python-hillel/django_quiz_1/actions/workflows/test.yml/badge.svg)](https://github.com/python-hillel/django_quiz_1/actions/workflows/test.yml)
+[![Testing](https://github.com/Nick-Mokrytsyi/QuizApplication/actions/workflows/Test.yml/badge.svg)](https://github.com/Nick-Mokrytsyi/QuizApplication/actions/workflows/Test.yml)
 
 ## Technical requirements
 ### Web-UI
