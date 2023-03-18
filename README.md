@@ -1,6 +1,7 @@
 # Django QUIZ
 
 [![Testing](https://github.com/Nick-Mokrytsyi/QuizApplication/actions/workflows/Test.yml/badge.svg)](https://github.com/Nick-Mokrytsyi/QuizApplication/actions/workflows/Test.yml)
+https://github.com/Nick-Mokrytsyi/QuizApplication/blob/60e3f8bd198c1447520ce734c622f7a780083468/src/coverage.svg
 
 ## Technical requirements
 ### Web-UI
