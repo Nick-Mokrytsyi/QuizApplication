@@ -1,10 +1,11 @@
 from django.test import SimpleTestCase
-from django.urls import reverse, resolve
+from django.urls import resolve, reverse
 from django.views.generic import TemplateView
 
 from ..views import (
-    UserRegisterView, UserLoginView, UserLogoutView, user_profile_view,
-    UserProfileUpdateView, user_activate, user_reactivate
+    UserLoginView, UserLogoutView, UserProfileUpdateView, UserRegisterView, user_activate, user_profile_view,
+    user_reactivate
+
 )
 
 

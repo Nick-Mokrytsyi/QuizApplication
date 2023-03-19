@@ -1,9 +1,10 @@
-from ..models import User
 
 from django.core.signing import Signer
 from django.test import Client
 from django.test import TestCase
 from django.urls import reverse
+
+from ..models import User
 
 
 class TestViews(TestCase):
@@ -12,7 +13,7 @@ class TestViews(TestCase):
             'username': 'user_1',
             'password1': '123qwe!@#',
             'password2': '123qwe!@#',
-            'email': 'user_1@test.com'
+            'email': 'user_1@test.com',
         }
         self.client = Client()
         self.registration_url = reverse('accounts:register')

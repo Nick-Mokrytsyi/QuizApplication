@@ -65,7 +65,7 @@ class ExamResultCreateView(LoginRequiredMixin, CreateView):
 
 class ExamResultQuestionView(LoginRequiredMixin, UpdateView):
 
-    def get_params(self,**kwargs):
+    def get_params(self, **kwargs):
         uuid = kwargs.get('uuid')
         res_uuid = kwargs.get('res_uuid')
         # order_num = kwargs.get('order_num')
