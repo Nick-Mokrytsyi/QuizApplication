@@ -15,7 +15,7 @@ class BaseModel(models.Model):
 
 class Exam(BaseModel):
     QUESTION_MIN_LIMIT = 3
-    QUESTION_MAX_LIMIT = 100
+    QUESTION_MAX_LIMIT = 10
 
     class LEVEL(models.IntegerChoices):
         BASIC = 0, 'Basic'
@@ -38,9 +38,7 @@ class Exam(BaseModel):
 
 class Question(BaseModel):
     exam = models.ForeignKey(Exam, related_name='questions', on_delete=models.CASCADE)
-    order_num = models.PositiveSmallIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(Exam.QUESTION_MAX_LIMIT)]
-    )
+    order_num = models.PositiveSmallIntegerField()
     text = models.CharField(max_length=2048)
     image = models.ImageField(upload_to='questions/', null=True, blank=True)
 
