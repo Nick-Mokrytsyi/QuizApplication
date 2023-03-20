@@ -1,6 +1,7 @@
 from uuid import uuid4
 
 from django.contrib.auth import get_user_model
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 
@@ -37,7 +38,9 @@ class Exam(BaseModel):
 
 class Question(BaseModel):
     exam = models.ForeignKey(Exam, related_name='questions', on_delete=models.CASCADE)
-    order_num = models.PositiveSmallIntegerField()
+    order_num = models.PositiveSmallIntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(Exam.QUESTION_MAX_LIMIT)]
+    )
     text = models.CharField(max_length=2048)
     image = models.ImageField(upload_to='questions/', null=True, blank=True)
 
