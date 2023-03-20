@@ -1,7 +1,7 @@
 from django.test import TestCase
 
-from ..models import User
 from ..admin import UserAdmin
+from ..models import User
 
 
 class TestAdminAvatarImage(TestCase):
