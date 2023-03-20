@@ -13,6 +13,12 @@ class QuestionInlineFormSet(forms.BaseInlineFormSet):
                 f'to {self.instance.QUESTION_MAX_LIMIT} inclusive'
             )
 
+        order_list_num = []
+        for form in self.forms:
+            order_list_num.append(form.cleaned_data['order_num'])  # get the list of all numbers
+        if max(order_list_num) > len(order_list_num):
+            raise ValidationError('You get a mistake in ordering numbers, please check. ***MUST INCREASE BY 1***')
+
 
 class ChoiceInlineFormSet(forms.BaseInlineFormSet):
     def clean(self):
