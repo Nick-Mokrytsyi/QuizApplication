@@ -15,7 +15,7 @@ class BaseModel(models.Model):
 
 class Exam(BaseModel):
     QUESTION_MIN_LIMIT = 3
-    QUESTION_MAX_LIMIT = 10
+    QUESTION_MAX_LIMIT = 100
 
     class LEVEL(models.IntegerChoices):
         BASIC = 0, 'Basic'
