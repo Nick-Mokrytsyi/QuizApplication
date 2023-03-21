@@ -2,7 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
-from django.views.generic import CreateView
+from django.views.generic import CreateView, DeleteView
 from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
@@ -39,7 +39,7 @@ class ExamDetailView(LoginRequiredMixin, DetailView, MultipleObjectMixin):
         return Result.objects.filter(
             exam=self.get_object(),
             user=self.request.user
-        ).order_by('state', '-create_timestamp')
+        ).order_by('state', '-create_timestamp')  # ORDER BY state ASC, create_timestamp DSC
 
 
 class ExamResultCreateView(LoginRequiredMixin, CreateView):
@@ -57,14 +57,13 @@ class ExamResultCreateView(LoginRequiredMixin, CreateView):
                 kwargs={
                     'uuid': uuid,
                     'res_uuid': result.uuid,
-                    'order_num': 1
+                    # 'order_num': 1
                 }
             )
         )
 
 
 class ExamResultQuestionView(LoginRequiredMixin, UpdateView):
-
     def get_params(self, **kwargs):
         uuid = kwargs.get('uuid')
         res_uuid = kwargs.get('res_uuid')
@@ -73,10 +72,10 @@ class ExamResultQuestionView(LoginRequiredMixin, UpdateView):
             uuid=res_uuid,
             user=self.request.user
         ).values('current_order_number').first().get('current_order_number') + 1
+
         return uuid, res_uuid, order_num
 
-    @staticmethod
-    def get_question(uuid, order_number):
+    def get_question(self, uuid, order_number):
         return Question.objects.get(
             exam__uuid=uuid,
             order_num=order_number
@@ -119,7 +118,7 @@ class ExamResultQuestionView(LoginRequiredMixin, UpdateView):
                 kwargs={
                     'uuid': uuid,
                     'res_uuid': res_uuid,
-                    'order_num': order_num + 1
+                    # 'order_num': order_num + 1
                 }
             )
         )
@@ -137,7 +136,28 @@ class ExamResultDetailView(LoginRequiredMixin, DetailView):
         return self.get_queryset().get(uuid=uuid)
 
 
-class ExamResultContinue(LoginRequiredMixin, UpdateView):
-
+class ExamResultUpdateView(LoginRequiredMixin, UpdateView):
     def get(self, request, *args, **kwargs):
-        pass
+        uuid = kwargs.get('uuid')
+        res_uuid = kwargs.get('res_uuid')
+        user = request.user
+
+        result = Result.objects.get(
+            user=user,
+            uuid=res_uuid
+        )
+
+        return HttpResponseRedirect(
+            reverse(
+                'quiz:question',
+                kwargs={
+                    'uuid': uuid,
+                    'res_uuid': res_uuid,
+                    # 'order_num': result.current_order_number + 1
+                }
+            )
+        )
+
+
+class ExamResultDeleteView(LoginRequiredMixin, DeleteView):
+    pass

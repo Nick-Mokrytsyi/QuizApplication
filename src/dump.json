@@ -1,0 +1,1838 @@
+[
+{
+   "model": "quiz.exam",
+   "pk": 1,
+   "fields": {
+      "create_timestamp": "2023-03-17T16:00:16.674Z",
+      "update_timestamp": "2023-03-17T16:00:16.674Z",
+      "uuid": "00ed3105-de2d-4f04-8308-ab96ab9eee40",
+      "title": "Math",
+      "description": "",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:48:58.154Z",
+      "update_timestamp": "2023-03-21T16:42:30.451Z",
+      "uuid": "91f886d1-bc1c-4cf2-9ab3-5b700978adaf",
+      "title": "Python - Middle",
+      "description": "Python Interview Questions",
+      "level": 1
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.277Z",
+      "update_timestamp": "2023-03-20T17:55:19.198Z",
+      "uuid": "b9bda2af-0685-4f32-b71f-a0d09de82a16",
+      "title": "Python - Advance",
+      "description": "Python Interview Questions",
+      "level": 2
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.812Z",
+      "update_timestamp": "2023-03-20T17:35:28.799Z",
+      "uuid": "aea33684-7be7-4493-bc2d-347067d957da",
+      "title": "Django - Basic",
+      "description": "15 basic Django interview questions",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 5,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.148Z",
+      "update_timestamp": "2023-03-21T16:43:12.359Z",
+      "uuid": "34ebbf15-8909-414c-8ad9-ba42ce1d3d5e",
+      "title": "Django - Middle",
+      "description": "19 intermediate Django interview questions",
+      "level": 1
+   }
+},
+{
+   "model": "quiz.exam",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2023-03-20T16:30:58.451Z",
+      "update_timestamp": "2023-03-20T19:28:50.775Z",
+      "uuid": "faf17fec-fb68-4bb2-81d2-33c02c08928e",
+      "title": "Test",
+      "description": "Test - Text",
+      "level": 0
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 1,
+   "fields": {
+      "create_timestamp": "2023-03-17T16:00:16.676Z",
+      "update_timestamp": "2023-03-17T16:01:24.341Z",
+      "exam": 1,
+      "order_num": 1,
+      "text": "2+2",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 2,
+   "fields": {
+      "create_timestamp": "2023-03-17T16:00:16.677Z",
+      "update_timestamp": "2023-03-17T16:01:11.967Z",
+      "exam": 1,
+      "order_num": 2,
+      "text": "2+3",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 3,
+   "fields": {
+      "create_timestamp": "2023-03-17T16:00:16.678Z",
+      "update_timestamp": "2023-03-17T16:01:00.232Z",
+      "exam": 1,
+      "order_num": 3,
+      "text": "2+4",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 4,
+   "fields": {
+      "create_timestamp": "2023-03-17T16:00:16.679Z",
+      "update_timestamp": "2023-03-17T16:00:43.755Z",
+      "exam": 1,
+      "order_num": 4,
+      "text": "2+5",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 5,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:48:58.155Z",
+      "update_timestamp": "2023-03-21T16:30:26.144Z",
+      "exam": 2,
+      "order_num": 1,
+      "text": "What are the key features of Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 6,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:48:58.156Z",
+      "update_timestamp": "2023-03-21T16:31:31.116Z",
+      "exam": 2,
+      "order_num": 2,
+      "text": "Differentiate between lists and tuples.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 7,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:48:58.156Z",
+      "update_timestamp": "2023-03-21T16:32:24.911Z",
+      "exam": 2,
+      "order_num": 3,
+      "text": "Explain the ternary operator in Python.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 8,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:48:58.156Z",
+      "update_timestamp": "2023-03-21T16:33:35.436Z",
+      "exam": 2,
+      "order_num": 4,
+      "text": "What are negative indices?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 9,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:51:11.171Z",
+      "update_timestamp": "2023-03-21T16:34:22.189Z",
+      "exam": 2,
+      "order_num": 5,
+      "text": "Is Python case-sensitive?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 10,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:51:11.171Z",
+      "update_timestamp": "2023-03-21T16:35:22.806Z",
+      "exam": 2,
+      "order_num": 6,
+      "text": "How long can an identifier be in Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 11,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:51:11.171Z",
+      "update_timestamp": "2023-03-21T16:36:18.971Z",
+      "exam": 2,
+      "order_num": 7,
+      "text": "How would you convert a string into lowercase?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 12,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:51:11.172Z",
+      "update_timestamp": "2023-03-21T16:37:20.159Z",
+      "exam": 2,
+      "order_num": 8,
+      "text": "What is the pass statement in Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 13,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:51:11.172Z",
+      "update_timestamp": "2023-03-21T16:38:03.188Z",
+      "exam": 2,
+      "order_num": 10,
+      "text": "Explain help() and dir() functions in Python.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 14,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:51:11.172Z",
+      "update_timestamp": "2023-03-21T16:38:44.049Z",
+      "exam": 2,
+      "order_num": 11,
+      "text": "What is slicing?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 15,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:51:11.173Z",
+      "update_timestamp": "2023-03-21T16:39:15.090Z",
+      "exam": 2,
+      "order_num": 12,
+      "text": "How would you declare a comment in Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 16,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.278Z",
+      "update_timestamp": "2023-03-21T16:40:38.413Z",
+      "exam": 3,
+      "order_num": 1,
+      "text": "What makes Python object-oriented?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 17,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.279Z",
+      "update_timestamp": "2023-03-21T16:44:49.831Z",
+      "exam": 3,
+      "order_num": 2,
+      "text": "How many types of objects does Python support?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 18,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.279Z",
+      "update_timestamp": "2023-03-21T16:45:40.585Z",
+      "exam": 3,
+      "order_num": 3,
+      "text": "How do we execute Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 19,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.280Z",
+      "update_timestamp": "2023-03-21T16:46:42.447Z",
+      "exam": 3,
+      "order_num": 4,
+      "text": "What is the lambda function?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 20,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.280Z",
+      "update_timestamp": "2023-03-21T16:47:47.802Z",
+      "exam": 3,
+      "order_num": 5,
+      "text": "Explain mutable vs immutable types?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 21,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.280Z",
+      "update_timestamp": "2023-03-21T16:48:57.845Z",
+      "exam": 3,
+      "order_num": 6,
+      "text": "What are *args, **kwargs?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 22,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.281Z",
+      "update_timestamp": "2023-03-21T16:49:41.744Z",
+      "exam": 3,
+      "order_num": 7,
+      "text": "Explain generators vs iterators",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 23,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.281Z",
+      "update_timestamp": "2023-03-21T16:50:50.920Z",
+      "exam": 3,
+      "order_num": 8,
+      "text": "What will be the output of the code below? list = [‘alfa’, ‘bravo’, ‘charlie’, ‘delta’. ‘echo’]  print list[10:]",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 24,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.281Z",
+      "update_timestamp": "2023-03-21T16:51:46.109Z",
+      "exam": 3,
+      "order_num": 9,
+      "text": "What does break and continue do in Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 25,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.282Z",
+      "update_timestamp": "2023-03-20T11:56:32.282Z",
+      "exam": 3,
+      "order_num": 10,
+      "text": "Can break and continue be used together?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 26,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.282Z",
+      "update_timestamp": "2023-03-21T16:52:32.029Z",
+      "exam": 3,
+      "order_num": 11,
+      "text": "What is the GIL in Python?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 27,
+   "fields": {
+      "create_timestamp": "2023-03-20T11:56:32.282Z",
+      "update_timestamp": "2023-03-21T16:53:17.042Z",
+      "exam": 3,
+      "order_num": 12,
+      "text": "Is Python Call by Value or Call by Reference? How are arguments passed by value or by reference?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 28,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.813Z",
+      "update_timestamp": "2023-03-20T12:00:24.813Z",
+      "exam": 4,
+      "order_num": 1,
+      "text": "What do you know or understand about Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 29,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.814Z",
+      "update_timestamp": "2023-03-20T12:00:24.814Z",
+      "exam": 4,
+      "order_num": 2,
+      "text": "What do you understand the term CRUD to mean?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 30,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.814Z",
+      "update_timestamp": "2023-03-20T12:00:24.814Z",
+      "exam": 4,
+      "order_num": 3,
+      "text": "What is your understanding of the term CSRF?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 31,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.815Z",
+      "update_timestamp": "2023-03-20T12:00:24.815Z",
+      "exam": 4,
+      "order_num": 4,
+      "text": "Could you explain a couple of the advantageous features of Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 32,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.815Z",
+      "update_timestamp": "2023-03-20T12:00:24.815Z",
+      "exam": 4,
+      "order_num": 5,
+      "text": "Explain which features of Django might be considered drawbacks.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 33,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.815Z",
+      "update_timestamp": "2023-03-20T12:00:24.815Z",
+      "exam": 4,
+      "order_num": 6,
+      "text": "Do you understand what is meant by Django architecture?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 34,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.815Z",
+      "update_timestamp": "2023-03-20T12:00:24.816Z",
+      "exam": 4,
+      "order_num": 7,
+      "text": "Do you understand how the project directory is structured in Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 35,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.816Z",
+      "update_timestamp": "2023-03-20T12:00:24.816Z",
+      "exam": 4,
+      "order_num": 8,
+      "text": "Could you explain what is meant by models?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 36,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.816Z",
+      "update_timestamp": "2023-03-20T12:00:24.816Z",
+      "exam": 4,
+      "order_num": 9,
+      "text": "State what is meant by template language.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 37,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.816Z",
+      "update_timestamp": "2023-03-20T12:00:24.816Z",
+      "exam": 4,
+      "order_num": 10,
+      "text": "State what is meant by views in Django.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 38,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.817Z",
+      "update_timestamp": "2023-03-20T12:00:24.817Z",
+      "exam": 4,
+      "order_num": 11,
+      "text": "State your understanding of ORM.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 39,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.817Z",
+      "update_timestamp": "2023-03-20T12:00:24.817Z",
+      "exam": 4,
+      "order_num": 12,
+      "text": "Could you outline what static files are used for and why they are critical?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 40,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.818Z",
+      "update_timestamp": "2023-03-20T12:00:24.818Z",
+      "exam": 4,
+      "order_num": 13,
+      "text": "State your understanding of DRF. Could you name one advantage of DRF?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 41,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.818Z",
+      "update_timestamp": "2023-03-20T12:00:24.818Z",
+      "exam": 4,
+      "order_num": 14,
+      "text": "Could you explain what is meant by a Django URL?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 42,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:00:24.818Z",
+      "update_timestamp": "2023-03-20T12:00:24.818Z",
+      "exam": 4,
+      "order_num": 15,
+      "text": "Could you briefly outline the inheritance styles found in Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 43,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.149Z",
+      "update_timestamp": "2023-03-20T12:03:35.150Z",
+      "exam": 5,
+      "order_num": 1,
+      "text": "In what circumstances would you use the ‘migrate’ command?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 44,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.150Z",
+      "update_timestamp": "2023-03-20T12:03:35.150Z",
+      "exam": 5,
+      "order_num": 2,
+      "text": "Explain the particular situations or reasons you must make use of ‘makemigrations’.",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 45,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.150Z",
+      "update_timestamp": "2023-03-20T12:03:35.150Z",
+      "exam": 5,
+      "order_num": 3,
+      "text": "Can you outline and briefly explain what session frameworks do?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 46,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.151Z",
+      "update_timestamp": "2023-03-20T12:03:35.151Z",
+      "exam": 5,
+      "order_num": 4,
+      "text": "Are you familiar with ‘Django-admin’? What do you understand about this?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 47,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.151Z",
+      "update_timestamp": "2023-03-20T12:03:35.151Z",
+      "exam": 5,
+      "order_num": 5,
+      "text": "How would you differentiate between projects and apps in Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 48,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.151Z",
+      "update_timestamp": "2023-03-20T12:03:35.151Z",
+      "exam": 5,
+      "order_num": 6,
+      "text": "How would you describe Django’s stability?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 49,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.152Z",
+      "update_timestamp": "2023-03-20T12:03:35.152Z",
+      "exam": 5,
+      "order_num": 7,
+      "text": "Are you familiar with serialization?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 50,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.152Z",
+      "update_timestamp": "2023-03-20T12:03:35.152Z",
+      "exam": 5,
+      "order_num": 8,
+      "text": "What do you understand about requests in Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 51,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.152Z",
+      "update_timestamp": "2023-03-20T12:03:35.152Z",
+      "exam": 5,
+      "order_num": 9,
+      "text": "Can you briefly outline and define what signals are in Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 52,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.153Z",
+      "update_timestamp": "2023-03-20T12:03:35.153Z",
+      "exam": 5,
+      "order_num": 10,
+      "text": "Can you briefly outline a couple of caching approaches for Django?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 53,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.153Z",
+      "update_timestamp": "2023-03-20T12:03:35.153Z",
+      "exam": 5,
+      "order_num": 11,
+      "text": "What is your understanding of user authentication?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 54,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.153Z",
+      "update_timestamp": "2023-03-20T12:03:35.153Z",
+      "exam": 5,
+      "order_num": 12,
+      "text": "What is your approach to configuring static files?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 55,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.153Z",
+      "update_timestamp": "2023-03-20T12:03:35.153Z",
+      "exam": 5,
+      "order_num": 13,
+      "text": "Could you briefly outline what is meant by the response lifecycle?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 56,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.154Z",
+      "update_timestamp": "2023-03-20T12:03:35.154Z",
+      "exam": 5,
+      "order_num": 14,
+      "text": "Are you aware of the command line that is used for loading data in Django? Could you explain a little about it?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 57,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.154Z",
+      "update_timestamp": "2023-03-20T12:03:35.154Z",
+      "exam": 5,
+      "order_num": 15,
+      "text": "Are you aware of what the map function does in Python? Could you explain this function?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 58,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.154Z",
+      "update_timestamp": "2023-03-20T12:03:35.154Z",
+      "exam": 5,
+      "order_num": 16,
+      "text": "Why are NumPy arrays better than Python lists that are nested?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 59,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.155Z",
+      "update_timestamp": "2023-03-20T12:03:35.155Z",
+      "exam": 5,
+      "order_num": 17,
+      "text": "What do you understand about decorators? Could you explain what they do?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 60,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.155Z",
+      "update_timestamp": "2023-03-20T12:03:35.155Z",
+      "exam": 5,
+      "order_num": 18,
+      "text": "Are you aware of how NumPy and SciPy are dissimilar? Could you name a couple of differences?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 61,
+   "fields": {
+      "create_timestamp": "2023-03-20T12:03:35.156Z",
+      "update_timestamp": "2023-03-20T12:03:35.156Z",
+      "exam": 5,
+      "order_num": 19,
+      "text": "Can you describe or outline the request/response cycle?",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 78,
+   "fields": {
+      "create_timestamp": "2023-03-20T16:30:58.453Z",
+      "update_timestamp": "2023-03-20T18:21:13.159Z",
+      "exam": 11,
+      "order_num": 3,
+      "text": "Text-4",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 79,
+   "fields": {
+      "create_timestamp": "2023-03-20T16:30:58.453Z",
+      "update_timestamp": "2023-03-20T18:21:13.159Z",
+      "exam": 11,
+      "order_num": 4,
+      "text": "Text-3",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 80,
+   "fields": {
+      "create_timestamp": "2023-03-20T16:30:58.453Z",
+      "update_timestamp": "2023-03-20T19:07:30.033Z",
+      "exam": 11,
+      "order_num": 8,
+      "text": "Text-6",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 81,
+   "fields": {
+      "create_timestamp": "2023-03-20T16:30:58.454Z",
+      "update_timestamp": "2023-03-20T18:21:13.161Z",
+      "exam": 11,
+      "order_num": 1,
+      "text": "Text-2",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 82,
+   "fields": {
+      "create_timestamp": "2023-03-20T17:04:44.717Z",
+      "update_timestamp": "2023-03-20T18:21:13.160Z",
+      "exam": 11,
+      "order_num": 5,
+      "text": "Text-5",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 83,
+   "fields": {
+      "create_timestamp": "2023-03-20T17:04:44.718Z",
+      "update_timestamp": "2023-03-20T18:21:13.158Z",
+      "exam": 11,
+      "order_num": 6,
+      "text": "Text-1",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 84,
+   "fields": {
+      "create_timestamp": "2023-03-20T18:22:05.705Z",
+      "update_timestamp": "2023-03-20T18:22:05.705Z",
+      "exam": 11,
+      "order_num": 7,
+      "text": "Text-7",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 85,
+   "fields": {
+      "create_timestamp": "2023-03-20T18:22:05.705Z",
+      "update_timestamp": "2023-03-20T18:48:37.615Z",
+      "exam": 11,
+      "order_num": 2,
+      "text": "text-8",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 86,
+   "fields": {
+      "create_timestamp": "2023-03-20T19:17:16.212Z",
+      "update_timestamp": "2023-03-20T19:17:16.212Z",
+      "exam": 11,
+      "order_num": 9,
+      "text": "Text -9",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 87,
+   "fields": {
+      "create_timestamp": "2023-03-20T19:17:16.213Z",
+      "update_timestamp": "2023-03-20T19:17:16.213Z",
+      "exam": 11,
+      "order_num": 10,
+      "text": "Text -10",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.question",
+   "pk": 88,
+   "fields": {
+      "create_timestamp": "2023-03-20T19:28:50.777Z",
+      "update_timestamp": "2023-03-20T19:28:50.777Z",
+      "exam": 11,
+      "order_num": 11,
+      "text": "11",
+      "image": ""
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 1,
+   "fields": {
+      "question": 4,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 2,
+   "fields": {
+      "question": 4,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 3,
+   "fields": {
+      "question": 4,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 4,
+   "fields": {
+      "question": 4,
+      "text": "7",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 5,
+   "fields": {
+      "question": 3,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 6,
+   "fields": {
+      "question": 3,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 7,
+   "fields": {
+      "question": 3,
+      "text": "4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 8,
+   "fields": {
+      "question": 3,
+      "text": "6",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 9,
+   "fields": {
+      "question": 2,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 10,
+   "fields": {
+      "question": 2,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 11,
+   "fields": {
+      "question": 2,
+      "text": "4",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 12,
+   "fields": {
+      "question": 2,
+      "text": "5",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 13,
+   "fields": {
+      "question": 1,
+      "text": "2",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 14,
+   "fields": {
+      "question": 1,
+      "text": "3",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 15,
+   "fields": {
+      "question": 1,
+      "text": "4",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 16,
+   "fields": {
+      "question": 1,
+      "text": "5",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 17,
+   "fields": {
+      "question": 5,
+      "text": "Interpreted",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 18,
+   "fields": {
+      "question": 5,
+      "text": "Dynamically-typed",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 19,
+   "fields": {
+      "question": 5,
+      "text": "Object-oriented",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 20,
+   "fields": {
+      "question": 5,
+      "text": "Concise and simple",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 21,
+   "fields": {
+      "question": 5,
+      "text": "ALL",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 22,
+   "fields": {
+      "question": 6,
+      "text": "No difference",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 23,
+   "fields": {
+      "question": 6,
+      "text": "The major difference is that a list is mutable, but a tuple is immutable.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 24,
+   "fields": {
+      "question": 6,
+      "text": "The major difference is that a list is immutable, but a tuple is mutable.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 25,
+   "fields": {
+      "question": 6,
+      "text": "WTF",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 26,
+   "fields": {
+      "question": 7,
+      "text": "If the expression is True, the statement under [on true] is executed. Else, that under [on false] is executed.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 27,
+   "fields": {
+      "question": 7,
+      "text": "ComeOn",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 28,
+   "fields": {
+      "question": 7,
+      "text": "WTF",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 29,
+   "fields": {
+      "question": 8,
+      "text": "A negative index, unlike a positive one, begins searching from the right.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 30,
+   "fields": {
+      "question": 8,
+      "text": "A negative index, unlike a positive one, begins searching from the left.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 31,
+   "fields": {
+      "question": 8,
+      "text": "A negative index, unlike a positive one, begins searching from the center.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 32,
+   "fields": {
+      "question": 9,
+      "text": "Yes",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 33,
+   "fields": {
+      "question": 9,
+      "text": "No",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 34,
+   "fields": {
+      "question": 9,
+      "text": "A language is case-sensitive if it distinguishes between identifiers like myname and Myname. In other words, it cares about case- lowercase or uppercase.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 35,
+   "fields": {
+      "question": 9,
+      "text": "WTF",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 36,
+   "fields": {
+      "question": 10,
+      "text": "Open PEP-8",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 37,
+   "fields": {
+      "question": 10,
+      "text": "69",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 38,
+   "fields": {
+      "question": 10,
+      "text": "79",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 39,
+   "fields": {
+      "question": 10,
+      "text": "PEP-20",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 40,
+   "fields": {
+      "question": 11,
+      "text": "upper()",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 41,
+   "fields": {
+      "question": 11,
+      "text": "lower()",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 42,
+   "fields": {
+      "question": 11,
+      "text": "islower()",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 43,
+   "fields": {
+      "question": 11,
+      "text": "isupper()",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 44,
+   "fields": {
+      "question": 12,
+      "text": "pass",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 45,
+   "fields": {
+      "question": 12,
+      "text": "print()",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 46,
+   "fields": {
+      "question": 12,
+      "text": "continue",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 47,
+   "fields": {
+      "question": 12,
+      "text": "all of them",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 48,
+   "fields": {
+      "question": 13,
+      "text": "The help() function displays the documentation string and help for its argument.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 49,
+   "fields": {
+      "question": 13,
+      "text": "The dir() function displays all the members of an object(any kind).",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 50,
+   "fields": {
+      "question": 13,
+      "text": "They help to find the dir",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 51,
+   "fields": {
+      "question": 13,
+      "text": "WTF",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 52,
+   "fields": {
+      "question": 14,
+      "text": "Cheese",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 53,
+   "fields": {
+      "question": 14,
+      "text": "Slicing is a technique that allows us to retrieve only a part of a list, tuple, or string. For this, we use the slicing operator [].",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 54,
+   "fields": {
+      "question": 14,
+      "text": "WTF",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 55,
+   "fields": {
+      "question": 15,
+      "text": "#",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 56,
+   "fields": {
+      "question": 15,
+      "text": "!#",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 57,
+   "fields": {
+      "question": 15,
+      "text": ".!.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 58,
+   "fields": {
+      "question": 15,
+      "text": "()",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 59,
+   "fields": {
+      "question": 16,
+      "text": "Encapsulation",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 60,
+   "fields": {
+      "question": 16,
+      "text": "Abstraction",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 61,
+   "fields": {
+      "question": 16,
+      "text": "Inheritance",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 62,
+   "fields": {
+      "question": 16,
+      "text": "Polymorphism",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 63,
+   "fields": {
+      "question": 16,
+      "text": "Data hiding",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 64,
+   "fields": {
+      "question": 16,
+      "text": "ALL",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 65,
+   "fields": {
+      "question": 17,
+      "text": "Immutable objects",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 66,
+   "fields": {
+      "question": 17,
+      "text": "Mutable objects",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 67,
+   "fields": {
+      "question": 17,
+      "text": "Inimitable objects",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 68,
+   "fields": {
+      "question": 17,
+      "text": "ALL",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 69,
+   "fields": {
+      "question": 18,
+      "text": "Python files first compile to bytecode",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 70,
+   "fields": {
+      "question": 18,
+      "text": "executes them",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 71,
+   "fields": {
+      "question": 18,
+      "text": "Python files first compile to bytecode. Then, the host executes them.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 72,
+   "fields": {
+      "question": 19,
+      "text": "A lambda function is an anonymous function that’s used when an anonymous function is required for a short period of time. This function can only have one statement, but it can have any number of parameters",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 73,
+   "fields": {
+      "question": 19,
+      "text": "FROG",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 74,
+   "fields": {
+      "question": 19,
+      "text": "BUNNY",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 75,
+   "fields": {
+      "question": 19,
+      "text": "RABIT",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 76,
+   "fields": {
+      "question": 20,
+      "text": "An immutable type cannot be changed. Examples are integers, floats, strings, tuples.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 77,
+   "fields": {
+      "question": 20,
+      "text": "A mutable type can change. Examples are lists, dictionaries, sets, classes.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 78,
+   "fields": {
+      "question": 20,
+      "text": "ALL",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 79,
+   "fields": {
+      "question": 21,
+      "text": "In cases when we don't know how many arguments will be passed to a function, like when we want to pass a list or a tuple of values, we use *args.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 80,
+   "fields": {
+      "question": 21,
+      "text": "The words args and kwargs are a convention, and we can use anything in their place.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 81,
+   "fields": {
+      "question": 21,
+      "text": "WORDS",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 82,
+   "fields": {
+      "question": 22,
+      "text": "An iterator has the whole sequence in memory before it returns the first result. An iterator uses the \"return\". A generator calculates each result at the moment it is called for. The next result is unknown. A generator uses \"yield\".",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 83,
+   "fields": {
+      "question": 22,
+      "text": "You'd use a generator when processing a stream, or when memory consumption is important.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 84,
+   "fields": {
+      "question": 22,
+      "text": "Generators are iterators, but iterators are not generators.",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 85,
+   "fields": {
+      "question": 22,
+      "text": "ALLL",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 86,
+   "fields": {
+      "question": 23,
+      "text": "The output will be []; it will not result in an IndexError.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 87,
+   "fields": {
+      "question": 23,
+      "text": "Delta",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 88,
+   "fields": {
+      "question": 23,
+      "text": "echo",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 89,
+   "fields": {
+      "question": 23,
+      "text": ".",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 90,
+   "fields": {
+      "question": 24,
+      "text": "Follow-up question to the previous question. Break and continue can be used together. “Break” will stop the current loop from execution, while “continue” will cause the next iteration of the loop to run immediately.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 91,
+   "fields": {
+      "question": 24,
+      "text": "Make a break",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 92,
+   "fields": {
+      "question": 24,
+      "text": "Continue after break",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 93,
+   "fields": {
+      "question": 24,
+      "text": "Nothing",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 94,
+   "fields": {
+      "question": 26,
+      "text": "Python is not thread-safe when it comes to memory management. So, if you're running multiple threads, the GIL is a bottleneck; it only allows one thread to access memory at a time. If everything is happening in one thread, then you're fine. But if multi-threading then, when one thread accesses memory, the GIL blocks all the other threads.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 95,
+   "fields": {
+      "question": 26,
+      "text": "I don't",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 96,
+   "fields": {
+      "question": 26,
+      "text": "you don't know too",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 97,
+   "fields": {
+      "question": 26,
+      "text": "Choose the first option",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 98,
+   "fields": {
+      "question": 27,
+      "text": "Everything in Python is an object and all variables hold references to the objects.",
+      "is_correct": true
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 99,
+   "fields": {
+      "question": 27,
+      "text": "VALUE",
+      "is_correct": false
+   }
+},
+{
+   "model": "quiz.choice",
+   "pk": 100,
+   "fields": {
+      "question": 27,
+      "text": "OBJECT",
+      "is_correct": false
+   }
+}
+]

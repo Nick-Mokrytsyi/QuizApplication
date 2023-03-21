@@ -6,6 +6,11 @@
 
 {% block header %}
     Result for exam: "{{ result.exam.title }}"
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-label="Basic example"
+           style="width: 100%" aria-valuenow="100"
+           aria-valuemin="0" aria-valuemax="100">100%</div>
+    </div>
 {% endblock %}
 
 {% block content %}
