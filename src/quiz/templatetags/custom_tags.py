@@ -9,6 +9,17 @@ def expression(value, *args):
         value = value.replace(f'%{idx}', str(arg))
     return eval(value)
 
+
+def calculate_progress_correct(a1, a2):
+    progress = (a1 / (a1 + a2)) * 100
+    return progress
+
+
+def calculate_progress_incorrect(a1, a2):
+    progress = (a2 / (a1 + a2)) * 100
+    return progress
+
+
 # {% expression '(%1 - 1) * 100 // %2' 23 56 as progress_level %}
 
 
@@ -21,3 +32,5 @@ def expression(value, *args):
 """
 
 register.simple_tag(func=expression, name='expression')
+register.simple_tag(func=calculate_progress_correct, name='calculate_progress_correct')
+register.simple_tag(func=calculate_progress_incorrect, name='calculate_progress_incorrect')

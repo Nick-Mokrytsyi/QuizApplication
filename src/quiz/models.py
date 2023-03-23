@@ -100,3 +100,11 @@ class Result(BaseModel):
             self.state = self.STATE.FINISHED
 
         self.save()
+
+    @property
+    def points(self):
+        point = self.num_correct_answers - self.num_incorrect_answers
+        if point >= 0:
+            return point
+        else:
+            return 0
