@@ -158,12 +158,12 @@ class ExamResultUpdateView(LoginRequiredMixin, UpdateView):
     def get(self, request, *args, **kwargs):
         uuid = kwargs.get('uuid')
         res_uuid = kwargs.get('res_uuid')
-        user = request.user
+        # user = request.user
 
-        result = Result.objects.get(
-            user=user,
-            uuid=res_uuid
-        )
+        # result = Result.objects.get(
+        #     user=user,
+        #     uuid=res_uuid
+        # )
 
         return HttpResponseRedirect(
             reverse(
