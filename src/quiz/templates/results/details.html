@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% load custom_tags %}
 
 {% block title %}
@@ -8,7 +7,7 @@
 
 {% block header %}
     Result for exam: "{{ result.exam.title }}"
-    {% calculate_progress_correc result.num_correct_answers result.num_incorrect_answers as correct %}
+    {% calculate_progress_correct result.num_correct_answers result.num_incorrect_answers as correct %}
     {% calculate_progress_incorrect result.num_correct_answers result.num_incorrect_answers as incorrect %}
     <div class="progress">
         <div class="progress-bar bg-success" role="progressbar"

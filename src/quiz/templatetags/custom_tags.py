@@ -10,11 +10,13 @@ def expression(value, *args):
     return eval(value)
 
 
+@register.simple_tag(name='calculate_progress_correct')
 def calculate_progress_correct(a1, a2):
     progress = (a1 / (a1 + a2)) * 100
     return progress
 
 
+@register.simple_tag(name='calculate_progress_incorrect')
 def calculate_progress_incorrect(a1, a2):
     progress = (a2 / (a1 + a2)) * 100
     return progress
@@ -32,5 +34,5 @@ def calculate_progress_incorrect(a1, a2):
 """
 
 register.simple_tag(func=expression, name='expression')
-register.simple_tag(func=calculate_progress_correct, name='calculate_progress_correct')
-register.simple_tag(func=calculate_progress_incorrect, name='calculate_progress_incorrect')
+# register.simple_tag(func=calculate_progress_correct, name='calculate_progress_correct')
+# register.simple_tag(func=calculate_progress_incorrect, name='calculate_progress_incorrect')
