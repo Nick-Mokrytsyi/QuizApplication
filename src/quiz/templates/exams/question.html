@@ -9,10 +9,15 @@
 {% block header %}
     {{ question.text }}
     {% expression '(%1 - 1) * 100 // %2' question.order_num question.exam.question_count as level %}
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-label="Basic example"
-           style="width: {{ level }}%" aria-valuenow="{{ level }}"
-           aria-valuemin="0" aria-valuemax="100">{{ level }}%</div>
+{#    <div class="progress">#}
+{#      <div class="progress-bar" role="progressbar" aria-label="Basic example"#}
+{#           style="width: {{ level }}%" aria-valuenow="{{ level }}"#}
+{#           aria-valuemin="0" aria-valuemax="100">{{ level }}%</div>#}
+{#    </div>#}
+        <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated"
+         role="progressbar" aria-label="Animated striped example" aria-valuenow="{{ level }}" style="width: {{ level }}%"
+         aria-valuemin="0" aria-valuemax="100">100%
     </div>
 {% endblock %}
 

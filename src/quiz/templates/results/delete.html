@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Delete - {{ result.exam }}
+{% endblock %}
+{% block header %}
+Delete result of exam "{{ result.exam }}"
+{% endblock %}
+
+{{% block content %}
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col">
+            <form method="post">
+                {% csrf_token %}
+                <div class="text-center">
+                    <p> Do you want to remove the result of exam  <strong>{{ result.exam }}</strong>
+                    </p>
+                    <input class="btn btn-outline-primary" type="submit" value="Agree"><br><br>
+                    <a class="btn btn-outline-primary" href="{% url 'quiz:list' %}">Back to list </a>
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+{% endblock %}
