@@ -19,6 +19,7 @@ RUN pip install --upgrade pip && \
 COPY src .
 #COPY .env_prod ../.env
 
+
 EXPOSE 1488
 
 #CMD python manage.py runserver 0.0.0.0:1488
